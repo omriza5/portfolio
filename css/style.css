@@ -459,7 +459,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 100vh;
+    height: 95vh;
   }
 
   #about h3 {
@@ -489,7 +489,7 @@ a {
   }
 
   #skills {
-    height: 60vh;
+    height: 80vh;
   }
 }
 
