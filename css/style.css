@@ -329,10 +329,22 @@ a {
   height: 100%;
 }
 
+/* Projects */
+#projects {
+  height: 100vh;
+  background-color: var(--light-purple);
+
+  /* to be deleted */
+  text-align: center;
+  font-size: 2.5rem;
+  color: #fff;
+  padding-top: 15rem;
+}
+
 /* Media Query */
 @media screen and (max-width: 1075px) {
   .main-header {
-    height: 50vh;
+    height: 60vh;
   }
   .main-content {
     flex-direction: column-reverse;
@@ -352,29 +364,29 @@ a {
   }
 
   #about {
-    height: 50vh;
+    height: 70vh;
   }
   .about-me p {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .basic-info {
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
 
   .info-item {
     margin-bottom: 2rem;
   }
   .bio .property {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .bio .value {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   #skills {
-    height: 50vh;
+    height: 70vh;
   }
 
   #skills h3 {
@@ -449,7 +461,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 60vh;
+    height: 70vh;
   }
 
   #about h3 {
@@ -467,7 +479,7 @@ a {
   }
   .bio {
     width: 100%;
-    height: 30vh;
+    height: 50vh;
   }
 
   .bio .property {
