@@ -3,6 +3,7 @@
 const rightSideBar = document.getElementById("rightSideBar");
 const hamIcon = document.getElementById("hamIcon");
 const exitIcon = document.getElementById("exitIcon");
+const sideBarUl = document.querySelector(".right-side-bar-items");
 
 hamIcon.addEventListener("click", () => {
   rightSideBar.style.display = "initial";
@@ -10,6 +11,10 @@ hamIcon.addEventListener("click", () => {
 });
 
 exitIcon.addEventListener("click", () => {
+  rightSideBar.style.display = "none";
+});
+
+sideBarUl.addEventListener("click", () => {
   rightSideBar.style.display = "none";
 });
 
