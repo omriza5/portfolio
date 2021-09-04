@@ -413,7 +413,7 @@ a {
   }
   #about {
     flex-direction: column;
-    height: 80vh;
+    height: 90vh;
   }
 
   .about-me {
@@ -459,7 +459,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 70vh;
+    height: 80vh;
   }
 
   #about h3 {
