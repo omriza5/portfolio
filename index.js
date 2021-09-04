@@ -12,3 +12,9 @@ hamIcon.addEventListener("click", () => {
 exitIcon.addEventListener("click", () => {
   rightSideBar.style.display = "none";
 });
+
+/** Age value */
+
+const age = document.getElementById("age");
+const currentYear = new Date().getFullYear();
+age.innerText = currentYear - 1990;

@@ -168,7 +168,7 @@ a {
   height: 60vh;
   margin: 0.5rem;
   padding: 0.5rem;
-  background: var(--yellow);
+  background: var(--bright-grey);
 }
 
 #about h3 {
@@ -226,12 +226,110 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fff;
+  background: #fff;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
     rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   border-radius: 15px;
 }
 
+/* Skills */
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--yellow);
+  height: 80vh;
+}
+
+#skills h3 {
+  margin-bottom: 2.5rem;
+  color: var(--smooth-black);
+  font-size: 2rem;
+}
+
+.pro-skills {
+  display: flex;
+  width: 70%;
+  padding: 4rem;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+
+.skill-info {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.line {
+  width: 50rem;
+  height: 0.7rem;
+  background: var(--bright-grey);
+  position: relative;
+}
+
+.htmlLine::after {
+  content: "";
+  position: absolute;
+  background: var(--light-red);
+  width: 80%;
+  height: 100%;
+}
+
+.jsLine::after {
+  content: "";
+  position: absolute;
+  background: var(--light-red);
+  width: 70%;
+  height: 100%;
+}
+
+.reactLine::after {
+  content: "";
+  position: absolute;
+  background: var(--light-red);
+  width: 60%;
+  height: 100%;
+}
+
+.nodejsLine::after {
+  content: "";
+  position: absolute;
+  background: var(--light-red);
+  width: 50%;
+  height: 100%;
+}
+
+.mongodbLine::after {
+  content: "";
+  position: absolute;
+  background: var(--light-red);
+  width: 50%;
+  height: 100%;
+}
+
+.gitLine::after {
+  content: "";
+  position: absolute;
+  background: var(--light-red);
+  width: 70%;
+  height: 100%;
+}
+
+/* Media Query */
 @media screen and (max-width: 1075px) {
   .main-content {
     flex-direction: column-reverse;
@@ -339,7 +437,6 @@ a {
   }
   100% {
     transform: scale(0.5);
-    transform: skew(50deg, 50deg);
   }
 }
 
