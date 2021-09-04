@@ -427,9 +427,7 @@ a {
     width: 90%;
     height: 50%;
   }
-}
 
-@media screen and (max-width: 830px) {
   #skills {
     height: 60vh;
   }
@@ -487,6 +485,16 @@ a {
   }
   .bio .value {
     font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 352px) {
+  #about {
+    height: 80vh;
+  }
+
+  .bio .property {
+    font-size: 1.5rem;
   }
 }
 
