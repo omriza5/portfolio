@@ -556,6 +556,37 @@ a {
   #skills {
     height: 80vh;
   }
+
+  .projects-list {
+    height: 70vh;
+  }
+
+  .project {
+    height: 25rem;
+    width: 35rem;
+    border-radius: 10px;
+  }
+
+  .project::after {
+    content: attr(data);
+    display: flex;
+    position: relative;
+    color: black;
+    font-size: 4rem;
+    font-weight: bold;
+    opacity: 0.8;
+    height: 0%;
+    width: 0%;
+    top: 50px;
+    left: 100px;
+    transition: all 1s ease;
+  }
+
+  .project:hover::after {
+    content: attr(data);
+    height: 0;
+    width: 0;
+  }
 }
 
 @media screen and (max-width: 352px) {
