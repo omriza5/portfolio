@@ -244,7 +244,7 @@ a {
 }
 
 #skills h3 {
-  margin-bottom: 2.5rem;
+  margin: 1.5rem 0 2.5rem 0;
   color: var(--smooth-black);
   font-size: 2rem;
 }
@@ -260,6 +260,7 @@ a {
   flex-direction: column;
   justify-content: center;
   margin-bottom: 2rem;
+  width: 100%;
 }
 
 .skill-info {
@@ -275,7 +276,7 @@ a {
 }
 
 .line {
-  width: 50rem;
+  width: 100%;
   height: 0.7rem;
   background: var(--bright-grey);
   position: relative;
