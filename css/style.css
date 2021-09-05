@@ -246,7 +246,7 @@ a {
 #skills h3 {
   margin: 1.5rem 0 2.5rem 0;
   color: var(--smooth-black);
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .pro-skills {
@@ -332,14 +332,69 @@ a {
 
 /* Projects */
 #projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
   background-color: var(--light-purple);
+}
 
-  /* to be deleted */
-  text-align: center;
-  font-size: 2.5rem;
-  color: #fff;
-  padding-top: 15rem;
+#projects h3 {
+  color: var(--bright-grey);
+  font-size: 3rem;
+  margin: 2rem 0 4rem 0;
+}
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  justify-items: center;
+  gap: 2rem;
+  height: 90vh;
+  width: 58vw;
+
+  position: relative;
+}
+
+.project {
+  height: 30rem;
+  width: 45rem;
+  border-radius: 10px;
+}
+
+.project:hover {
+  transform: scale(1.1);
+  transition: all 0.35s;
+}
+
+.project::after {
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: var(--bright-grey);
+  background: var(--smooth-black);
+  font-size: 3rem;
+  font-weight: bold;
+  opacity: 0.8;
+  height: 0%;
+  width: 0%;
+  top: 5px;
+  left: 5px;
+  transition: all 1s ease;
+}
+
+.project:hover::after {
+  content: attr(data);
+  height: 28rem;
+  width: 44rem;
+}
+
+.weather-app {
+  background: url("https://demo.templateflip.com/creative-cv/images/project-3.jpg")
+    no-repeat center center/cover;
 }
 
 /* Media Query */
@@ -405,6 +460,15 @@ a {
 
   .line {
     width: 100%;
+  }
+
+  .projects-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 0;
   }
 }
 
