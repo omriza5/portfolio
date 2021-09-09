@@ -373,7 +373,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: relative;
   color: var(--bright-grey);
   background: var(--smooth-black);
   font-size: 3rem;
