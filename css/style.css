@@ -169,10 +169,13 @@ a {
   background: var(--bright-grey);
 }
 
-.about-title {
-  font-size: 2.5rem;
+#about h3 {
   color: var(--smooth-black);
   text-align: center;
+  font-size: 2.5rem;
+}
+
+.about-title {
   margin-bottom: 1rem;
 }
 
@@ -198,7 +201,6 @@ a {
 
 .bio-title {
   margin-bottom: 3rem;
-  font-size: 2.5rem;
 }
 
 .bio .basic-info {
