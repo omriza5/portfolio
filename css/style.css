@@ -133,8 +133,7 @@ a {
   color: var(--smooth-black);
   font-size: 4rem;
   font-weight: 400;
-
-  animation: scaleRotateRight 1.5s 1s;
+  animation: opacity-easeOutBounce 3s;
 }
 
 .social-icon {
@@ -337,11 +336,11 @@ a {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: var(--light-purple);
+  background-color: var(--bright-grey);
 }
 
 #projects h3 {
-  color: var(--bright-grey);
+  color: var(--smooth-black);
   font-size: 3rem;
   margin: 2rem 0 4rem 0;
 }
@@ -364,7 +363,7 @@ a {
 }
 
 .project:hover {
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
 
 .project::after {
@@ -392,8 +391,12 @@ a {
 }
 
 .weather-app {
-  background: url("https://demo.templateflip.com/creative-cv/images/project-3.jpg")
-    no-repeat center center/cover;
+  background: url("../images/weather-forecast.jpg") no-repeat center
+    center/cover;
+}
+
+.claculator {
+  background: url("../images/calculator.jpg") no-repeat center center/cover;
 }
 
 /* Media Query */
@@ -649,6 +652,48 @@ a {
 @keyframes rotate360 {
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes opacity-easeOutBounce {
+  0% {
+    opacity: 1;
+  }
+
+  12% {
+    opacity: 0.89;
+  }
+
+  24% {
+    opacity: 0.56;
+  }
+
+  36% {
+    opacity: 0.02;
+  }
+
+  54% {
+    opacity: 0.25;
+  }
+
+  74% {
+    opacity: 0.02;
+  }
+
+  82% {
+    opacity: 0.06;
+  }
+
+  92% {
+    opacity: 0.01;
+  }
+
+  96% {
+    opacity: 0.02;
+  }
+
+  100% {
+    opacity: 0;
   }
 }
 
