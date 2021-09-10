@@ -348,16 +348,16 @@ a {
 #projects h3 {
   color: var(--smooth-black);
   font-size: 3rem;
-  margin: 2rem 0 4rem 0;
+  margin: 2rem 0 6rem 0;
 }
+
 .projects-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, 1fr);
   justify-items: center;
   gap: 2rem;
-  height: 90vh;
-  width: 58vw;
+  height: 100vh;
 
   position: relative;
 }
@@ -403,6 +403,9 @@ a {
 
 .claculator {
   background: url("../images/calculator.jpg") no-repeat center center/cover;
+}
+.amazon {
+  background: url("../images/amazon.jpg") no-repeat center center/cover;
 }
 
 /* Media Query */
